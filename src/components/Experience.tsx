@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { experienceData } from '../data/experienceData';
 import { Calendar, MapPin } from 'lucide-react';
 
@@ -15,7 +15,7 @@ const Experience = () => {
         
         <div className="relative max-w-4xl mx-auto">
           {/* Timeline line */}
-          <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gray-200 dark:bg-gray-700"></div>
+          {/* <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gray-200 dark:bg-gray-700"></div> */}
           
           {/* Experience items */}
           {experienceData.map((experience, index) => (
