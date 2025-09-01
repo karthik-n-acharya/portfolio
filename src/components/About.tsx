@@ -13,7 +13,7 @@ const About = () => {
               Who am I
             </h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              I'm Karthik, a passionate Software Developer with over 7 years of
+              I'm Karthik, a passionate Software Developer with 7.3 years of
               experience in designing, developing, and delivering high-quality
               web applications.
             </p>

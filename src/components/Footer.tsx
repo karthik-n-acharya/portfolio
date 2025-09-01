@@ -1,14 +1,13 @@
-import React from 'react';
-import { Code, Heart } from 'lucide-react';
+// import { Code, Heart } from 'lucide-react';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  // const currentYear = new Date().getFullYear();
   
   return (
     <footer className="bg-gray-900 dark:bg-gray-950 text-white py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-6 md:mb-0">
+          {/* <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center text-primary-400">
               <Code className="h-8 w-8 mr-2" />
               <span className="text-xl font-bold">Portfolio</span>
@@ -63,7 +62,7 @@ const Footer = () => {
             <p className="text-gray-500 text-sm mt-1 flex items-center">
               Made with <Heart className="h-4 w-4 mx-1 text-red-500" /> using React
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

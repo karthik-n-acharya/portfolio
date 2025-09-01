@@ -2,7 +2,7 @@ import { IExperienceData } from "../types";
 
 export const experienceData: IExperienceData[] = [
   {
-    role: "Senior Engineer",
+    role: "Lead Engineer",
     company: "Ascendion Engineering Pvt. Ltd.",
     duration: "June 2023 – Present",
     location: "Karnataka, India",
@@ -33,7 +33,7 @@ export const experienceData: IExperienceData[] = [
       "Ensuring that websites or applications work smoothly across different devices and browsers.",
     ],
     icon: "work",
-    clients: "White Space Health,HIMSS, Virtual Card - RPM",
+    clients: "White Space Health, HIMSS, Virtual Card - RPM",
   },
   {
     role: "Software Developer",

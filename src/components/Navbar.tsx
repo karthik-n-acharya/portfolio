@@ -47,7 +47,7 @@ const Navbar = () => {
           
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
-              {['home', 'about', 'experience', 'skills', 'projects', 'contact'].map((item) => (
+              {['home', 'about', 'experience', 'skills', 'contact'].map((item) => (
                 <li key={item}>
                   <button
                     onClick={() => scrollToSection(item)}
@@ -76,7 +76,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white dark:bg-gray-900 shadow-md">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {['home', 'about', 'experience', 'skills', 'projects', 'contact'].map((item) => (
+            {['home', 'about', 'experience', 'skills', 'contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}

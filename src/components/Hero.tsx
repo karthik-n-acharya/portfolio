@@ -35,7 +35,7 @@ const Hero = () => {
           >
             <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-lg">
               <img
-                src="my-snap.jpg"
+                src="my-pick.jpg"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
@@ -59,7 +59,7 @@ const Hero = () => {
           >
             <span className="relative inline-block">
               <span className="animate-typing overflow-hidden whitespace-nowrap pr-1">
-                Senior Software Developer
+                Lead Engineer
               </span>
             </span>
           </motion.div>

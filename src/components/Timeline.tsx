@@ -43,9 +43,9 @@ export default function Timeline() {
                   )}
                 </motion.div>
                 {/* Content */}
-                <div className="w-3/5 pr-8 pl-8 relative">
+                <div className="w-5/6 w-md-3/5 pr-4 pl-4 md:pr-8 md:pl-8 relative">
                   {index === 0 && (
-                    <div className="absolute right-10 z-1 w-6 h-6 rounded-full bg-primary-600 dark:bg-primary-400 shadow-md transform -translate-y-1/2 md:-translate-x-1/2 top-6 mt-6"></div>
+                    <div className="absolute right-10 z-20 w-6 h-6 rounded-full bg-primary-600 dark:bg-primary-400 shadow-md transform -translate-y-1/2 md:-translate-x-1/2 top-6 mt-2 md:mt-6"></div>
                   )}
                   <motion.div
                     whileHover={{ scale: 1.02 }}
