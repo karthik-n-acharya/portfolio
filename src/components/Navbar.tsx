@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Code } from 'lucide-react';
+import { Menu, X, Code, Download } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,6 +57,16 @@ const Navbar = () => {
                   </button>
                 </li>
               ))}
+              <li>
+                <a
+                  href={`${import.meta.env.BASE_URL}my_resume.pdf`}
+                  download="Karthik-Nagesh-Acharya-Resume.pdf"
+                  className="inline-flex items-center gap-1 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                >
+                  <Download className="h-4 w-4" />
+                  Resume
+                </a>
+              </li>
             </ul>
           </nav>
           
@@ -85,6 +95,15 @@ const Navbar = () => {
                 {item}
               </button>
             ))}
+            <a
+              href={`${import.meta.env.BASE_URL}my_resume.pdf`}
+              download="Karthik-Nagesh-Acharya-Resume.pdf"
+              onClick={() => setIsOpen(false)}
+              className="flex items-center gap-2 w-full text-left px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md"
+            >
+              <Download className="h-4 w-4" />
+              Download Resume
+            </a>
           </div>
         </div>
       )}
