@@ -438,6 +438,72 @@ export const skillsData = [
         ),
       },
       {
+        name: ".NET 8",
+        level: 85,
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 48 48"
+            width="64px"
+            height="64px"
+          >
+            <defs>
+              <linearGradient
+                id="dotnetGradient"
+                x1="8"
+                y1="6"
+                x2="40"
+                y2="42"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stopColor="#512BD4" />
+                <stop offset="1" stopColor="#7A3FF6" />
+              </linearGradient>
+            </defs>
+
+            <path
+              fill="url(#dotnetGradient)"
+              d="M24 2.5 42.6 13v22L24 45.5 5.4 35V13z"
+            />
+
+            <path
+              fill="#fff"
+              d="M13 16h3.2l11.2 15.1V16h2.6v20h-3L15.6 20.5V36H13z"
+            />
+
+            <path
+              fill="#fff"
+              d="M33.5 33.2a1.7 1.7 0 1 1-3.4 0 1.7 1.7 0 0 1 3.4 0z"
+            />
+          </svg>
+        ),
+      },
+      {
+        name: "C#",
+        level: 85,
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 48 48"
+            width="64px"
+            height="64px"
+          >
+            <path
+              fill="#68217A"
+              d="M43.5 14.1a5.4 5.4 0 0 0-2.7-4.7L26.7 1.7a5.4 5.4 0 0 0-5.4 0L7.2 9.4a5.4 5.4 0 0 0-2.7 4.7v19.8a5.4 5.4 0 0 0 2.7 4.7l14.1 7.7a5.4 5.4 0 0 0 5.4 0l14.1-7.7a5.4 5.4 0 0 0 2.7-4.7z"
+            />
+            <path
+              fill="#fff"
+              d="M24 11.5c-6.9 0-12.5 5.6-12.5 12.5S17.1 36.5 24 36.5c4.1 0 7.8-2 10.1-5.2l-4.2-2.8A7.4 7.4 0 0 1 24 31.5a7.5 7.5 0 1 1 5.9-12l4.2-2.8A12.5 12.5 0 0 0 24 11.5z"
+            />
+            <path
+              fill="#fff"
+              d="M34.5 21h-2v-2h-2v2h-2v2h2v2h-2v2h2v2h2v-2h2v2h2v-2h2v-2h-2v-2h2v-2z"
+            />
+          </svg>
+        ),
+      },
+      {
         name: "MongoDB",
         level: 75,
         icon: (

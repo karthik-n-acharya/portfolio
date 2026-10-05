@@ -13,25 +13,34 @@ const About = () => {
               Who am I
             </h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              I'm Karthik, a passionate Software Developer with 7.3 years of
-              experience in designing, developing, and delivering high-quality
-              web applications.
+              I'm <strong>Karthik</strong>, a <strong>Lead Engineer with 8+ years of experience</strong> in designing,
+              developing, and delivering scalable, high-performance enterprise web applications.
             </p>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              My career started from 2019, and since then, I've worked with
-              various technologies and frameworks to deliver high-quality
-              products that meet client needs and exceed expectations.
-              Proficient in modern languages, web frameworks, and development
-              methodologies, with expertise in both frontend and backend
-              systems. Adept at leading teams, managing projects, and
-              implementing best practices to ensure scalability, performance,
-              and maintainability.
+              I started my software development career in <strong>2019</strong> and have since worked across a wide range of
+              technologies, with strong expertise in <strong>React, Angular, TypeScript, JavaScript, .NET, Java,
+              Microsoft Dynamics 365, Power Platform, and Azure</strong>. My experience spans frontend architecture,
+              backend services, CRM solutions, CMS-driven applications, REST/GraphQL integrations, cloud infrastructure,
+              CI/CD, and enterprise application modernization.
+            </p>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
+              In my current role, I work on <strong>React-based Dynamics 365/CRM solutions, Angular/Nx enterprise applications,
+              .NET 8 backend services, GraphQL APIs, Azure cloud infrastructure, and modern SSR applications</strong>.
+              I have experience designing reusable component libraries, building scalable monorepo architectures,
+              implementing performance optimizations, developing CMS-driven applications, and automating deployments using
+              <strong> Azure DevOps, Docker, AKS, and Bicep</strong>.
             </p>
             <p className="text-gray-600 dark:text-gray-400">
-              A great communicator with a strong focus on discovering and
-              delivering solutions, facilitating meaningful discussions, and
-              building consensus. Quick to adapt to new technologies, concepts,
-              approaches, and environments.
+              I also actively use <strong>AI-assisted development tools such as Devin and Windsurf</strong> to accelerate
+              software development, code generation, debugging, refactoring, testing, documentation, and understanding
+              complex codebases. I focus on effectively combining AI-assisted development with engineering practices such
+              as code reviews, testing, security, maintainability, and performance. As a Lead Engineer, I enjoy solving
+              complex technical problems, mentoring and collaborating with team members, participating in architecture and
+              design discussions, working with stakeholders, estimating and planning development activities, and delivering
+              reliable solutions within timelines. I'm a strong communicator who enjoys discovering practical solutions,
+              facilitating meaningful technical discussions, and building consensus across teams. I'm also passionate about
+              continuously learning new technologies and exploring <strong>AI, LLMs, cloud technologies, and modern software
+              engineering practices</strong> to stay ahead in the rapidly evolving technology landscape.
             </p>
           </div>
         </div>
