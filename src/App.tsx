@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import ThemeToggle from './components/ThemeToggle';
 import Timeline from './components/Timeline';
 import Achievement from './components/Achievement';
+import PortfolioChat from './components/PortfolioChat';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -42,6 +43,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <PortfolioChat />
     </div>
   );
 }
