@@ -1,3 +1,170 @@
+export const skillCategoryIcons = {
+  frontend: (
+    <svg
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 48 48"
+      className="h-20 w-20"
+    >
+      <defs>
+        <linearGradient id="frontGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#47D7E8" />
+          <stop offset="1" stopColor="#4263EB" />
+        </linearGradient>
+      </defs>
+      <rect x="5" y="7" width="38" height="34" rx="5" fill="#DDE7FF" />
+      <rect
+        x="8"
+        y="10"
+        width="32"
+        height="28"
+        rx="3"
+        fill="#FFFFFF"
+        stroke="url(#frontGrad)"
+        strokeWidth="2"
+      />
+      <path d="M8 17H40" stroke="#8CA5F8" strokeWidth="2" />
+      <circle cx="12" cy="13.5" r="1" fill="#F97373" />
+      <circle cx="16" cy="13.5" r="1" fill="#FBBF24" />
+      <circle cx="20" cy="13.5" r="1" fill="#34D399" />
+      <path
+        d="M19 23L14 27L19 31M29 23L34 27L29 31M26 21L22 33"
+        fill="none"
+        stroke="url(#frontGrad)"
+        strokeWidth="2.4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M15 42H33"
+        stroke="#4263EB"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  ),
+  backend: (
+    <svg
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 48 48"
+      className="h-20 w-20"
+    >
+      <defs>
+        <linearGradient id="backGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#8B9BFF" />
+          <stop offset="1" stopColor="#5945C7" />
+        </linearGradient>
+      </defs>
+      <rect x="8" y="5" width="32" height="12" rx="3" fill="url(#backGrad)" />
+      <rect x="8" y="19" width="32" height="12" rx="3" fill="url(#backGrad)" />
+      <rect x="8" y="33" width="32" height="10" rx="3" fill="url(#backGrad)" />
+      <circle cx="13" cy="11" r="1.5" fill="#FFFFFF" />
+      <circle cx="13" cy="25" r="1.5" fill="#FFFFFF" />
+      <circle cx="13" cy="38" r="1.5" fill="#FFFFFF" />
+      <path
+        d="M19 11H34M19 25H34M19 38H34"
+        stroke="#E8E9FF"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+      <path
+        d="M4 11H6M42 11H44M4 25H6M42 25H44M4 38H6M42 38H44"
+        stroke="#38BDF8"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+    </svg>
+  ),
+  database: (
+    <svg
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 48 48"
+      className="h-20 w-20"
+    >
+      <defs>
+        <linearGradient id="dbGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#5EA9FF" />
+          <stop offset="1" stopColor="#3549A8" />
+        </linearGradient>
+      </defs>
+      <path
+        d="M7 10C7 5 34 5 34 10V35C34 40 7 40 7 35Z"
+        fill="url(#dbGrad)"
+      />
+      <ellipse
+        cx="20.5"
+        cy="10"
+        rx="13.5"
+        ry="5"
+        fill="#85C4FF"
+        stroke="#4263C8"
+        strokeWidth="1.5"
+      />
+      <path
+        d="M7 18C7 23 34 23 34 18M7 26C7 31 34 31 34 26"
+        fill="none"
+        stroke="#A6D6FF"
+        strokeWidth="1.5"
+      />
+      <circle cx="35" cy="32" r="9" fill="#FFFFFF" stroke="#F5A623" strokeWidth="2" />
+      <path
+        d="M35 27V37M30 32H40"
+        stroke="#F5A623"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+      />
+      <circle cx="35" cy="32" r="3" fill="#FFE4A6" />
+    </svg>
+  ),
+  devops: (
+    <svg
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 48 48"
+      className="h-20 w-20"
+    >
+      <defs>
+        <linearGradient id="devGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#47E5C2" />
+          <stop offset="1" stopColor="#2187E8" />
+        </linearGradient>
+      </defs>
+      <path
+        d="M15 30C8 30 7 20 14 18C15 10 27 8 32 16C42 15 44 29 34 30Z"
+        fill="#D9F5FF"
+        stroke="#52A8EF"
+        strokeWidth="1.5"
+      />
+      <path
+        d="M14 24L18 28L14 32M23 32L27 28L23 24"
+        fill="none"
+        stroke="#2679D7"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <circle cx="24" cy="38" r="7" fill="url(#devGrad)" />
+      <circle cx="24" cy="38" r="3" fill="#FFFFFF" />
+      <path
+        d="M24 29V31M24 45V47M15 38H17M31 38H33M18 32L19.5 33.5M28.5 42.5L30 44M30 32L28.5 33.5M19.5 42.5L18 44"
+        stroke="#2477D4"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <path
+        d="M7 10L9 12L13 7M35 8L37 10L41 5"
+        fill="none"
+        stroke="#F5B942"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  ),
+};
+
 export const skillsData = [
   {
     category: "Frontend Development",
