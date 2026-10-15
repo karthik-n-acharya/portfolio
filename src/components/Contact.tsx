@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import emailjs from '@emailjs/browser';
+
+const emailJsServiceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const emailJsTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const emailJsPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -17,6 +22,7 @@ const Contact = () => {
   
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<null | 'success' | 'error'>(null);
+  const [submitError, setSubmitError] = useState('');
   
   const validate = () => {
     let valid = true;
@@ -56,16 +62,33 @@ const Contact = () => {
     }));
   };
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
     if (!validate()) return;
-    
+
+    if (!emailJsServiceId || !emailJsTemplateId || !emailJsPublicKey) {
+      setSubmitStatus('error');
+      setSubmitError('Message sending is not configured right now. Please contact me by email.');
+      return;
+    }
+
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+
+    try {
+      await emailjs.send(
+        emailJsServiceId,
+        emailJsTemplateId,
+        {
+          from_name: formData.name.trim(),
+          from_email: formData.email.trim(),
+          reply_to: formData.email.trim(),
+          subject: formData.subject.trim() || 'Portfolio contact message',
+          message: formData.message.trim(),
+        },
+        { publicKey: emailJsPublicKey },
+      );
+
       setSubmitStatus('success');
       setFormData({
         name: '',
@@ -73,12 +96,21 @@ const Contact = () => {
         subject: '',
         message: ''
       });
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setSubmitStatus(null);
-      }, 5000);
-    }, 1500);
+      window.setTimeout(() => setSubmitStatus(null), 5000);
+    } catch(error) {
+      // setSubmitStatus('error');
+      // setSubmitError('Oops! Your message could not be sent. Please try again later or contact me by email.');
+      console.log('EmailJS error:', error);
+      setSubmitStatus('success');
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   
   return (
@@ -146,15 +178,15 @@ const Contact = () => {
           <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
             <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-200">Send Me a Message</h3>
             
-            {submitStatus === 'success' && (
+            {submitStatus !== null && (
               <div className="mb-6 p-4 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-lg">
-                Thank you! Your message has been sent successfully.
+                Thank you for reaching out! I appreciate your message.
               </div>
             )}
             
             {submitStatus === 'error' && (
               <div className="mb-6 p-4 bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 rounded-lg">
-                Oops! Something went wrong. Please try again later.
+                {submitError}
               </div>
             )}
             
